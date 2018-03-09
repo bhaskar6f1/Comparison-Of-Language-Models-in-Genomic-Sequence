@@ -105,7 +105,10 @@ unsigned int generateFasterNGram(unsigned int * ngramCount, char ** ngramList,
                         uniqueCount = 1;
                     }
                 }
-                
+                /**
+                 count - nGram index, ptr[ind] - position of that nGram
+                 uniqueCount - total number of nGram represented by index count
+                **/
                 ngramList[count] = ptr[ind];
                 ngramCount[count] = uniqueCount;
                 uniqueCount++;
